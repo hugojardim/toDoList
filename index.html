@@ -7,15 +7,55 @@
 	<script src="script.js"></script>
 </head>
 <body>
-<p>toDoList</p>
+<main>
 
-    <form id="taskForm">
-        <label for="userInput">Add task</label>
-        <input id="userInput" type="text" name="task" placeholder="Enter task">
-        <input type="submit" name="submit" value="Add task">
-    </form>
+	<h1>toDoList</h1>
 
-    <ul id="taskList">
-    </ul>
+	    <form id="taskForm">
+	        <label for="userInput">Add task</label>
+	        <input id="userInput" type="text" name="task" placeholder="Enter task">
+	        <input type="submit" name="submit" value="Add task">
+	    </form>
+
+	<div id="container" style="">
+		<div id="todo">
+			<h3>
+			    To Do
+			</h3>
+		    <ol>
+			    <li>
+				    <div class="border-gradient"></div>
+				    <div></div>
+				    <div class="border-gradient"></div>
+			    </li>
+		    </ol>
+		</div>
+		<div id="doing">
+			<h3>
+				Doing
+			</h3>
+			<ol>
+			    <li>
+				    <div class="border-gradient"></div>
+				    <div></div>
+				    <div class="border-gradient"></div>
+			    </li>
+			</ol>
+		</div>
+		<div id="done">
+			<h3>
+				Done
+			</h3>
+			<ol>
+			    <li>
+					<div class="border-gradient"></div>
+				    <div></div>
+				    <div class="border-gradient"></div>
+			    </li>
+		    </ol>
+		</div>
+	</div>
+
+</main>
 </body>
 </html>

@@ -3,10 +3,8 @@
 }
 
 body {
-
-	background-color: #0c0f19;
+	background-color: #001d3d;
 	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
 	color: #ffffff;
@@ -16,6 +14,86 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	text-align: center;
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+	width: 75svh;
+	gap: 5%;
+	padding-block: 10%;
+}
+
+#container div {
+	border-radius: 2%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#container div ol {
+	list-style: none;
+	padding-block: 3%;
+	padding-inline: 0;
+}
+
+#container div ol li {
+	border-radius: 5%;
+	height: 30svh;
+	width: 20svw;
+	background: #0035;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-items: center;
+	padding-block: 5px;
+}
+
+.border-gradient {
+    background: linear-gradient(to right, transparent, #ffd500, transparent); /* Gradiente monocromático */
+	height: 1px;
+	width: 95%;
+}
+
+#container div h3 {
+	padding-block: 3px;
+	padding-inline: 6px;
+	border-radius: 5%;
+	border: 2px solid #0035;
+}
+
+#todo h3 {
+	background: rgba(255, 0, 0, 0.33);
 
 }
+
+#doing h3 {
+	background: rgba(255, 219, 41, 0.33);
+
+}
+
+#done h3 {
+	background: rgba(127, 255, 41, 0.33);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
