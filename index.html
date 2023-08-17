@@ -11,21 +11,34 @@
 
 	<h1>toDoList</h1>
 
-	    <form id="taskForm">
-	        <label for="userInput">Add task</label>
-	        <input id="userInput" type="text" name="task" placeholder="Enter task">
-	        <input type="submit" name="submit" value="Add task">
-	    </form>
+	<button id="openModal">
+	  Adicionar
+	</button>
+
+	<dialog>
+	  <form id="taskForm">
+		  <label for="taskTitle">Adicionar título</label>
+	      <input id="taskTitle" type="text" name="title" placeholder="Enter title">
+	      <label for="taskTitle">Adicionar descrição</label>
+		  <input id="taskDescription" type="text" name="task" placeholder="Enter decription">
+		  <button type="submit" id="post">Enviar</button>
+		  <button value="cancel">Cancel</button>
+	  </form>
+	</dialog>
 
 	<div id="container" style="">
 		<div id="todo">
 			<h3>
 			    To Do
 			</h3>
-		    <ol>
+		    <ol id="todoList">
 			    <li>
-				    <div class="border-gradient"></div>
-				    <div></div>
+                    <div class="border-gradient"></div>
+                    <button type="button" class="next">></button>
+				    <div>
+					    <h2 class="taskTitle">Title</h2>
+					    <p class="taskDescription">Content</p>
+				    </div>
 				    <div class="border-gradient"></div>
 			    </li>
 		    </ol>
@@ -34,7 +47,7 @@
 			<h3>
 				Doing
 			</h3>
-			<ol>
+			<ol id="doingList">
 			    <li>
 				    <div class="border-gradient"></div>
 				    <div></div>
@@ -46,7 +59,7 @@
 			<h3>
 				Done
 			</h3>
-			<ol>
+			<ol id="doneList">
 			    <li>
 					<div class="border-gradient"></div>
 				    <div></div>
